@@ -52,6 +52,15 @@ Citação recomendada:
 
 > *This research has made use of the NASA Exoplanet Archive, which is operated by the California Institute of Technology, under contract with the National Aeronautics and Space Administration under the Exoplanet Exploration Program.*
 
+### Download do Dataset
+
+Para garantir que a versão mais recente do catálogo seja utilizada, o dataset pode ser baixado diretamente do:
+
+NASA Exoplanet Archive  
+https://exoplanetarchive.ipac.caltech.edu
+
+A versão utilizada neste projeto corresponde aos dados disponíveis em: **(mês/ano)**.  
+Caso prefira reproduzir exatamente os resultados apresentados.
 ---
 
 ## Como executar
