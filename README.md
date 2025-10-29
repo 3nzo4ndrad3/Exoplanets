@@ -1,4 +1,4 @@
-# Exoplanets — Mass–Radius statistical analysis
+# Exoplanets — Mass–Radius Statistical Analysis
 
 Este repositório apresenta uma análise estatística da relação entre **massa e raio de exoplanetas** utilizando modelos de **Regressão Linear** em escala logarítmica.  
 O objetivo é investigar como propriedades físicas e estelares afetam o raio planetário e validar modelos preditivos para caracterização planetária.
@@ -7,24 +7,25 @@ O objetivo é investigar como propriedades físicas e estelares afetam o raio pl
 
 ## Estrutura do Projeto
 
-| Arquivo | Descrição |
-|--------|-----------|
-| `exoplanets.csv` | Base original de exoplanetas |
-| `EXO_RxM.ipynb` | Notebook com limpeza, análise e modelos |
-| `Análise_EXOPLANETS.pdf` | Relatório final em formato acadêmico |
+| Pasta / Arquivo | Descrição |
+|----------------|-----------|
+| `data/exoplanets.csv` | Dataset utilizado após limpeza |
+| `notebooks/EXO_RxM.ipynb` | Notebook com análise completa |
+| `docs/Analise_Exoplanets.pdf` | Relatório final em PDF |
+| `README.md` | Documentação do projeto |
 
 ---
 
 ## Metodologia
 
 Foram aplicadas:
+
 - Estatísticas descritivas e análise exploratória
 - Transformações logarítmicas das variáveis físicas
 - Regressão Linear Múltipla com erros robustos (HC1)
 - Validação cruzada e diagnóstico dos resíduos
 
 **Modelo final:**  
-
 `log(R) = β₀ + β₁ · log(M) + β₂ · pl_eqt + β₃ · st_met`
 
 ---
@@ -46,21 +47,22 @@ Os dados publicados aqui são derivados do:
 > https://exoplanetarchive.ipac.caltech.edu
 
 Licença:
-> Uso acadêmico e público permitido, **com citação obrigatória**
+> Uso acadêmico e público permitido **com citação obrigatória** 
 
 Citação recomendada:
 
-> *This research has made use of the NASA Exoplanet Archive, which is operated by the California Institute of Technology, under contract with the National Aeronautics and Space Administration under the Exoplanet Exploration Program.*
+> *This research has made use of the NASA Exoplanet Archive, which is operated by the California Institute of Technology, under contract with
+> the National Aeronautics and Space Administration under the Exoplanet Exploration Program.*
 
-### Download do Dataset
+---
 
-Para garantir que a versão mais recente do catálogo seja utilizada, o dataset pode ser baixado diretamente do:
+### 🔗 Download do Dataset Original (atualizado)
 
-NASA Exoplanet Archive  
+Para sempre ter a última versão oficial:  
 https://exoplanetarchive.ipac.caltech.edu
 
-A versão utilizada neste projeto corresponde aos dados disponíveis em: **(mês/ano)**.  
-Caso prefira reproduzir exatamente os resultados apresentados.
+> A versão utilizada neste projeto corresponde aos dados disponíveis em: **Setembro/2025**
+
 ---
 
 ## Como executar
@@ -73,3 +75,6 @@ numpy
 matplotlib
 statsmodels
 scikit-learn
+
+# Execute o notebook
+jupyter notebook notebooks/EXO_RxM.ipynb
